@@ -1,4 +1,4 @@
-# Analysis of Hiring Trends and Talent Demand in the Indian Job Market Using SQL and Power BI
+# Analysis of Hiring Trends and Talent Demand in the Indian Job Market 2025 Using SQL and Power BI
 
 ## Project Overview
 This project delivers a comprehensive analysis of hiring trends and talent demand in the Indian job market using SQL and Power BI. The study focuses on understanding employment demand, salary patterns, skill requirements, experience levels, and remote hiring trends across industries, roles, and locations.
