@@ -1,161 +1,98 @@
-# Analysis of Hiring Trends and Talent Demand in the Indian Job Market 2025 Using SQL and Power BI
+# **Analysis of Hiring Trends & Talent Demand in the Indian Job Market 2025 Using SQL & Power BI**
 
-## Project Overview
-This project delivers a comprehensive analysis of hiring trends and talent demand in the Indian job market using SQL and Power BI. The study focuses on understanding employment demand, salary patterns, skill requirements, experience levels, and remote hiring trends across industries, roles, and locations.
+## **Introduction**
+The Indian job market is rapidly evolving, with increasing focus on skills, experience, and remote hiring. This project analyzes **hiring trends, talent demand, salary patterns, and remote work practices** using SQL and Power BI, providing actionable insights for recruiters, organizations, and job seekers.
 
-The objective of this project is to provide actionable, data-driven insights that can support strategic decision-making for recruiters, organizations, and job seekers.
+## **Problem Statement**
+Organizations often struggle to align hiring strategies with market realities due to fragmented data on roles, skills, salaries, and locations. This study provides a **data-driven solution** to support workforce planning and strategic hiring decisions.
 
----
+## **Objective of Study**
+- Analyze overall hiring activity and market health  
+- Identify time-based hiring trends and seasonality  
+- Assess talent demand across industries, roles, and skills  
+- Examine salary patterns and experience-level trends  
+- Compare remote and on-site hiring practices  
+- Provide actionable recommendations for recruitment and workforce planning  
 
-## Project Objectives
-- Analyze overall hiring activity and market health
-- Identify time-based hiring trends and seasonality
-- Understand talent and skill demand across industries
-- Evaluate salary patterns by role and experience
-- Compare remote and on-site hiring trends
-- Assess geographic and industry-wise hiring distribution
+## **Scope of Study**
+- Covers the Indian job market across industries, roles, and locations  
+- Focuses on hiring trends, skill gaps, salary insights, and remote hiring patterns  
+- Supports strategic recruitment, workforce planning, and talent acquisition  
 
----
+## **Dataset Description**
+- **Dataset Size:** 3,000 rows × 43 columns  
+- **Base Table:** `Job_Market_Base`  
+- **Calculation Tables (16):**  
+  1. `Demand_vs_Salary`  
+  2. `High_Pay_and_High_Demand`  
+  3. `Hiring_Trends_Year`  
+  4. `Hiring_Trends_Month_Year`  
+  5. `Industry_Hiring`  
+  6. `Industry_Talent_Demand`  
+  7. `Location_Hiring`  
+  8. `Market_Pressure`  
+  9. `Opening_Trends_Window`  
+  10. `Overview_Job_Opening`  
+  11. `Ranked_Roles`  
+  12. `Remote_Distribution`  
+  13. `Remote_Role_Industry`  
+  14. `Remote_Salary_Comparison`  
+  15. `Salary_by_Experience`  
+  16. `Salary_by_Job_Role`  
+  17. `Skill_Demand`  
 
-## Data Preparation & Cleaning
-Data preparation and cleaning were performed entirely using SQL (PostgreSQL) to ensure data accuracy and consistency. Key steps included:
-- Creating a clean working table from raw data
-- Removing duplicate records
-- Handling missing and null values
-- Standardizing job titles, industries, and location names
-- Validating salary ranges and eliminating invalid values
-- Converting experience levels into numeric formats
-- Creating derived columns such as quarter and season
+*(The above 16 calculation tables + 1 base table `Job_Market_Base` were used for data processing and analysis.)*
 
----
+## **Tools & Technologies Used**
+- **Data Cleaning & Analysis:** PostgreSQL (SQL, Views, Window Functions)  
+- **Visualization:** Microsoft Power BI (Data Modeling, DAX, Interactive Dashboards)  
+- **Data Handling & Preprocessing:** Microsoft Excel / CSV  
+- **Version Control & Documentation:** GitHub  
 
-## SQL Analysis Performed
-- Exploratory Data Analysis (EDA)
-- Hiring trends by year and month
-- Industry-wise and location-wise hiring analysis
-- Skill demand analysis
-- Salary analysis by job role and experience
-- Demand vs salary comparison
-- Market pressure and demand index analysis
-- Ranking high-demand and high-paying roles
-- Trend analysis using window functions
-- Creation of SQL views for reporting and dashboard integration
+## **Data Preparation and Cleaning Using SQL**
+- Removed duplicates and handled missing/null values  
+- Standardized job titles, industries, and locations  
+- Converted experience levels into numeric formats  
+- Validated salary ranges and eliminated invalid values  
+- Created derived columns: quarter, season, demand index  
+- Built **17 structured tables** (1 base + 16 calculation tables) to support analysis and dashboards  
 
----
+## **Analysis Performed**
+- **Exploratory Data Analysis (EDA):** Distribution of roles, skills, salaries, and experience  
+- **Time-based Hiring Trends:** Monthly and yearly patterns, seasonal fluctuations  
+- **Industry & Location Analysis:** High-demand sectors and regions  
+- **Skill & Talent Demand Analysis:** Identifying in-demand skills and roles  
+- **Salary & Experience Insights:** High-paying roles, experience-based salary trends  
+- **Remote vs On-site Hiring Analysis:** Geographic and role-wise remote trends  
+- **Advanced SQL Analysis:** Ranking roles, calculating demand index, window functions, and creating reporting views for dashboards
+  
+## **Power BI Dashboards**
+Developed **5 interactive dashboards**:  
 
-## Power BI Dashboards
-The project includes the following professionally designed dashboards:
+1. **Startup Hiring Overview & Market Health** – Total openings, average salary, demand index, market pressure  
+2. **Hiring Trends Analysis (Year & Month)** – Monthly and seasonal hiring patterns  
+3. **Talent Demand & Skill Intelligence** – High-demand roles, skill gaps, industry-wise talent needs  
+4. **Salary & Experience Insights** – Compensation trends, high-paying roles, and demand alignment  
+5. **Remote, Location & Industry Analysis** – Remote vs on-site hiring, geographic and industry distribution  
 
-### Startup Hiring Overview & Market Health  
-**Purpose:**  
-Provides an executive-level summary of overall hiring activity, total job openings, average salary, demand index, and market pressure across roles and industries.
+## **Insights**
+- Hiring demand varies across roles, industries, and regions  
+- Certain skills consistently remain high in demand across multiple sectors  
+- Senior-level roles offer higher salaries, though demand does not always align with pay  
+- Remote hiring constitutes a significant portion of opportunities  
+- Market pressure and demand index highlight critical roles requiring immediate hiring focus  
 
----
+## **Suggestions**
+- Align hiring strategies with high-demand roles and skill requirements  
+- Implement dynamic, seasonal recruitment planning  
+- Focus on upskilling/reskilling to close talent gaps  
+- Expand remote hiring to access broader talent pools  
+- Regularly benchmark salaries and use performance-linked compensation for high-demand roles  
 
-### Hiring Trends Analysis (Year & Month)  
-**Purpose:**  
-Analyzes time-based hiring trends to identify growth patterns, seasonality, and monthly fluctuations in hiring demand.
+## **Conclusion**
+This project demonstrates an **end-to-end data analytics workflow**, from SQL data cleaning and calculation table creation to **interactive Power BI dashboards**, providing actionable insights into hiring trends, talent demand, and workforce planning in the Indian job market.
 
----
-
-### Talent Demand & Skill Intelligence Dashboard  
-**Purpose:**  
-Highlights high-demand job roles, in-demand skills, and industry-wise talent requirements to support workforce planning and skill gap analysis.
-
----
-
-### Salary & Experience Insights Dashboard  
-**Purpose:**  
-Examines compensation trends by job role, experience level, demand index, and overall market value, including identification of high-paying and high-demand roles.
-
----
-
-### Remote, Location & Industry Hiring Analysis  
-**Purpose:**  
-Analyzes remote vs on-site hiring trends, geographic demand across cities, and industry-wise hiring distribution in the Indian job market.
-
----
-
-## Tools & Technologies Used
-- PostgreSQL (SQL, Views, Window Functions)
-- Power BI (Data Modeling, DAX, Interactive Visualizations)
-- Excel / CSV
-- GitHub (Version Control & Documentation)
-
----
-
-## Key Insights
-- Hiring demand varies significantly across roles, industries, and time periods
-- Certain skills consistently show high demand across multiple industries
-- Senior-level roles command higher salaries, but demand does not always align with pay
-- Remote hiring forms a substantial portion of job opportunities
-- Geographic and industry factors play a critical role in talent demand
-
----
-## Recommendations
-
-### Hiring Strategy Recommendations
-- Organizations should align hiring strategies with high-demand roles and skills identified through market analysis.
-- Time-based hiring trends indicate the need for dynamic and seasonal recruitment planning rather than fixed hiring cycles.
-- Roles exhibiting high demand and market pressure should be prioritized to ensure timely talent acquisition.
-- Skill-focused hiring approaches are recommended to improve workforce adaptability and long-term value.
-
----
-
-### Talent Acquisition and Workforce Planning Suggestions
-- Workforce planning should be guided by industry-specific demand trends to optimize recruitment efforts.
-- Organizations should invest in upskilling and reskilling initiatives to address skill gaps in high-demand areas.
-- A balanced hiring approach across entry, mid, and senior experience levels is recommended based on demand and salary trends.
-- Data-driven forecasting can improve long-term workforce sustainability and talent availability.
-
----
-
-### Salary Benchmarking and Remote Hiring Strategies
-- Regular salary benchmarking is recommended to maintain competitive compensation structures.
-- High-demand roles should be supported with skill-based and performance-linked compensation models.
-- Remote hiring strategies should be expanded to access a wider talent pool and improve hiring flexibility.
-- Offering remote work options can enhance talent retention and reduce geographic hiring constraints.
-
----
-
-## Limitations of the Study
-
-### Dataset Constraints
-- The analysis is based on secondary data and may not fully represent the complete Indian job market.
-- Certain industries, roles, or geographic locations may be underrepresented due to data availability.
-- Salary figures are estimated averages and may vary across organizations and regions.
-
----
-
-### Assumptions Made During Analysis
-- Missing values were handled using statistical and standardization techniques, which may introduce minor variations.
-- Experience levels were converted into numeric categories to enable analytical comparison.
-- Demand index and market pressure metrics were derived using available attributes and assumed to be consistent across industries.
-- The analysis assumes stable market conditions during the study period and does not account for sudden economic or policy changes.
-
-
-## Conclusion
-This project demonstrates an end-to-end data analytics workflow, starting from raw data cleaning using SQL to developing insightful Power BI dashboards. It showcases how structured data analysis can provide meaningful insights into hiring trends and talent demand within the Indian job market.
-
----
-## References
-
-### Kaggle Dataset Reference
-- Kaggle. *Indian Job Market / Hiring Trends Dataset*.  
-  Source used for analyzing hiring trends, talent demand, salary patterns, and skill requirements in the Indian job market.
-
----
-
-### Tools and Documentation References
-- PostgreSQL Documentation – SQL queries, views, and window functions  
-- Microsoft Power BI Documentation – Data modeling, DAX measures, and dashboard creation  
-- Microsoft Excel Documentation – Data handling and preprocessing  
-- GitHub Documentation – Version control and project hosting  
-
----
-
-## Author
+## **Author**
 **Lakshma**  
-MBA | Data Analyst Aspirant  
-Skills: SQL, Power BI, Data Analysis
-
+MBA | Aspiring Data Analyst  
+**Skills:** SQL | Power BI | Data Analysis  
